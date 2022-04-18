@@ -1,6 +1,7 @@
+import React from 'react-dom';
 import { ArrowCircleRightOutlined } from '@mui/icons-material';
 import PropTypes from 'prop-types';
-import React from 'react-dom';
+import './Fishcard.css';
 
 const FishCard = ({ fish }) => (
   <div className="fishcard">
