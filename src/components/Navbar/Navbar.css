@@ -5,8 +5,20 @@
   padding: 10px;
   background-color: rgb(0, 140, 255);
   color: aliceblue;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .nav-icons {
   width: 24px;
+}
+
+.nav-search > * + * {
+  margin-left: 15px;
+}
+
+.nav-title {
+  transform: translateX(30%);
 }

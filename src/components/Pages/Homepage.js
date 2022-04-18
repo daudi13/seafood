@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../Navbar/Navbar';
 import FishCard from '../Fishcard/Fishcard';
+import './HomePage.css';
 
 const Homepage = () => {
   const fishData = [
