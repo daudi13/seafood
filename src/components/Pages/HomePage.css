@@ -1,0 +1,8 @@
+.header-img {
+  margin-top: 48px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
