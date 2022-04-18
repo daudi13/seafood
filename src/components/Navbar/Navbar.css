@@ -1,5 +1,12 @@
 .nav {
-  padding: 20px;
-  background-color: black;
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(0, 140, 255);
+  color: aliceblue;
+}
+
+.nav-icons {
+  width: 24px;
 }
