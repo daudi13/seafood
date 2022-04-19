@@ -14,15 +14,11 @@ body {
 }
 
 .accordion {
+  background-color: rgb(9, 83, 133) !important;
+}
+
+.accordion-eader > .accordion-button {
   background-color: rgb(9, 83, 133);
-}
-
-.accordion-header{
-  background-color: rgb(9, 83, 133) !important;
-  
-}
-
-.accordion-button {
-  background-color: rgb(9, 83, 133) !important;
   color: #fff;
-}
+} 
+
