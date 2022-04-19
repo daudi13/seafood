@@ -2,10 +2,11 @@ import PropTypes from 'prop-types';
 import React from 'react-dom';
 import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRounded';
 import './Navbar.css';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = ({ title, back }) => (
   <nav className="nav">
-    {back ? <ArrowBackIosNewRoundedIcon /> : <img className="nav-icons" src="./images/fish.png" alt="fish" />}
+    {back ? (<NavLink to="/"><ArrowBackIosNewRoundedIcon /></NavLink>) : <img className="nav-icons" src="./images/fish.png" alt="fish" />}
     <h2 className="nav-title">{title}</h2>
     <div className="nav-search">
       <img className="nav-icons" src="./images/mic.png" alt="mic" />
