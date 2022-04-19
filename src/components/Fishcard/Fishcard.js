@@ -5,8 +5,9 @@ import './Fishcard.css';
 
 const FishCard = ({ fish }) => (
   <div className="fishcard" style={{ backgroundImage: `url(${fish.img})` }}>
-    <ArrowCircleRightOutlined />
-    <h3>{fish.name}</h3>
+    <ArrowCircleRightOutlined className="pointer" />
+    <h3 className="fishname">{fish.name}</h3>
+    <div className="overlay" />
   </div>
 );
 

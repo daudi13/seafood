@@ -9,9 +9,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10px;
+  position: relative;
 }
 
-
-.fishcard > ArrowCircleRightOutlined {
+.overlay {
   position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(34, 189, 189, 0.4);
+  bottom: 0;
+  z-index: 1;
+}
+
+.fishname, .pointer {
+  z-index: 10;
 }
