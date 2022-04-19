@@ -4,9 +4,8 @@ import PropTypes from 'prop-types';
 import './Fishcard.css';
 
 const FishCard = ({ fish }) => (
-  <div className="fishcard">
+  <div className="fishcard" style={{ backgroundImage: `url(${fish.img})` }}>
     <ArrowCircleRightOutlined />
-    <img src={fish.img} alt="fish" />
     <h3>{fish.name}</h3>
   </div>
 );
