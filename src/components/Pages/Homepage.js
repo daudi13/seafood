@@ -2,8 +2,10 @@ import React from 'react';
 import NavBar from '../Navbar/Navbar';
 import FishCard from '../Fishcard/Fishcard';
 import './HomePage.css';
+import { useNavigate } from 'react-router-dom';
 
 const Homepage = () => {
+  const navigate = useNavigate();
   const fishData = [
     {
       id: '1',
@@ -89,6 +91,7 @@ const Homepage = () => {
           <FishCard
             key={fish.id}
             fish={fish}
+            onClick={}
           />
         ))}
       </main>
