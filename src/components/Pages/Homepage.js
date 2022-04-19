@@ -2,10 +2,8 @@ import React from 'react';
 import NavBar from '../Navbar/Navbar';
 import FishCard from '../Fishcard/Fishcard';
 import './HomePage.css';
-import { useNavigate } from 'react-router-dom';
 
 const Homepage = () => {
-  const navigate = useNavigate();
   const fishData = [
     {
       id: '1',
@@ -81,7 +79,7 @@ const Homepage = () => {
   return (
     <>
       <header>
-        <NavBar />
+        <NavBar title="seafood" back={false} />
         <img className="header-img" src="https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="fishing boat" />
         <div className="image-cover" />
       </header>
@@ -91,7 +89,6 @@ const Homepage = () => {
           <FishCard
             key={fish.id}
             fish={fish}
-            onClick={}
           />
         ))}
       </main>
