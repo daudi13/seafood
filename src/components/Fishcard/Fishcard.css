@@ -1,5 +1,16 @@
 .fishcard {
-  flex: 50%;
+  height: 200px;
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.fishcard
+
+.fishcard > ArrowCircleRightOutlined {
+  position: absolute;
+}
