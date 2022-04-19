@@ -9,7 +9,7 @@ const Homepage = () => {
   const fishData = [
     {
       id: '1',
-      name: 'tuna',
+      name: 'obambla',
       img: 'https://www.fishwatch.gov/sites/default/files/white%20hake_Calvin%20Alexander_1.jpg',
     },
     {
