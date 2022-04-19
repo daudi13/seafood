@@ -1,15 +1,21 @@
+import { propTypes } from 'react-bootstrap/esm/Image';
 import React from 'react-dom';
 import './Navbar.css';
 
-const NavBar = () => (
+const NavBar = ({ pageTitle, back }) => (
   <nav className="nav">
-    <img className="nav-icons" src="./images/fish.png" alt="fish" />
-    <h2 className="nav-title">Seafood</h2>
+    {back || <img className="nav-icons" src="./images/fish.png" alt="fish" />}
+    <h2 className="nav-title">{pageTitle}</h2>
     <div className="nav-search">
       <img className="nav-icons" src="./images/mic.png" alt="mic" />
       <img className="nav-icons" src="./images/settings-cog.png" alt="mic" />
     </div>
   </nav>
 );
+
+NavBar.propTypes = {
+  pageTitle: propTypes.String.isRequired,
+  back: propTypes.bool.isRequired,
+};
 
 export default NavBar;
