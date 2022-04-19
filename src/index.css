@@ -12,3 +12,17 @@ body {
   background-color: rgb(0, 153, 255);
   color: #fff;
 }
+
+.accordion {
+  background-color: rgb(9, 83, 133);
+}
+
+.accordion-header{
+  background-color: rgb(9, 83, 133) !important;
+  
+}
+
+.accordion-button {
+  background-color: rgb(9, 83, 133) !important;
+  color: #fff;
+}
