@@ -1,21 +1,26 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react-dom';
 import { ArrowCircleRightOutlined } from '@mui/icons-material';
 import PropTypes from 'prop-types';
 import './Fishcard.css';
 
-const FishCard = ({ fish }) => (
-  <div className="fishcard" style={{ backgroundImage: `url(${fish.img})` }}>
+const FishCard = ({ name, img, onClick }) => (
+  // eslint-disable-next-line jsx-a11y/click-events-have-key-events
+  <div
+    className="fishcard"
+    style={{ backgroundImage: `url(${img})` }}
+    onClick={onClick}
+  >
     <ArrowCircleRightOutlined className="pointer" />
-    <h3 className="fishname">{fish.name}</h3>
+    <h3 className="fishname">{name}</h3>
     <div className="overlay" />
   </div>
 );
 
 FishCard.propTypes = {
-  fish: PropTypes.shape({
-    img: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-  }).isRequired,
+  img: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default FishCard;

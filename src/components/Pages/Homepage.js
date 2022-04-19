@@ -90,8 +90,9 @@ const Homepage = () => {
         {fishData.map((fish) => (
           <FishCard
             key={fish.id}
-            fish={fish}
-            onClick={navigate('/detailsPage', { state: { fish } })}
+            name={fish.name}
+            img={fish.img}
+            onClick={() => { navigate('/detailsPage', { state: { fish } }); }}
           />
         ))}
       </main>
