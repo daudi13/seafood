@@ -1,14 +1,17 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import NavBar from '../Navbar/Navbar';
 
 const DetailsPage = () => {
   const { state } = useLocation();
   const { fish } = state;
 
   return (
-    <div>
-      <h3>{fish.name}</h3>
-    </div>
+    <>
+      <header>
+        <NavBar title={fish.name} back={1} />
+      </header>
+    </>
   );
 };
 
