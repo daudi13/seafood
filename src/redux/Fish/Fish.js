@@ -24,7 +24,7 @@ const getFishFail = (error) => ({
   payload: error,
 });
 
-export default function getFish() {
+function getFish() {
   return (dispatch) => {
     dispatch(getFishRequest());
     FetchFishData()
@@ -50,3 +50,25 @@ export default function getFish() {
       });
   };
 }
+
+export default function FishReducer(state = initialState, action) {
+  switch (state.action) {
+    case GET_FISH_REQUEST:
+      return {
+        ...state,
+        loading: true,
+      };
+    case GET_FISH_SUCCESS:
+      return {
+        ...state,
+        fishArray: action.payload,
+      };
+    case GET_FISH_FAIL:
+      return {
+        ...state,
+        error: action.payload,
+      };
+    default:
+      return state;
+  }
+};
