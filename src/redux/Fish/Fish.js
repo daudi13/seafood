@@ -1,4 +1,4 @@
-import FetchFishData from '../../database/fishAPI';
+import fetchFishData from '../../database/fishAPI';
 
 const GET_FISH_REQUEST = 'seafood/Fish/FETCH/GET_REQUEST';
 const GET_FISH_SUCCESS = 'seafood/Fish/GET_SUCCESS';
@@ -27,21 +27,20 @@ const getFishFail = (error) => ({
 function getFish() {
   return (dispatch) => {
     dispatch(getFishRequest());
-    FetchFishData()
+    fetchFishData()
       .then((data) => {
         const fishJSON = data.map((dat) => ({
-          sciName: dat['Scientific Name'],
-          normalName: dat['Species Name'],
-          biology: dat.Biology,
-          calories: dat.Calories,
-          carbohydrates: dat.Carbohydrate,
-          fat: dat['Fat, Total'],
-          proteins: dat.Protein,
-          imgArr: dat['Image Gallery'],
-          locale: dat.Location,
-          population: dat['Population Status'],
-          harvest: dat.Harvest,
-          health: dat['Health Benefits'],
+          id: dat.id,
+          name: dat.name,
+          sciName: dat.latin_name,
+          maxLength: dat.length_max,
+          minLength: dat.length_min,
+          minWeight: dat.weight_min,
+          maxWeight: dat.weight_max,
+          lifespan: dat.lifespan,
+          habitat: dat.habitat,
+          diet: dat.diet,
+          img: dat.image_link,
         }));
         dispatch(getFishSuccess(fishJSON));
       })
@@ -52,7 +51,7 @@ function getFish() {
 }
 
 export default function FishReducer(state = initialState, action) {
-  switch (state.action) {
+  switch (action.type) {
     case GET_FISH_REQUEST:
       return {
         ...state,
