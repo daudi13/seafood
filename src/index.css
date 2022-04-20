@@ -22,3 +22,19 @@ body {
   color: #fff;
 } 
 
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+li {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
