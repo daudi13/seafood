@@ -71,4 +71,11 @@ export default function FishReducer(state = initialState, action) {
     default:
       return state;
   }
+}
+
+export {
+  getFishRequest,
+  getFishSuccess,
+  getFishFail,
+  getFish,
 };
