@@ -8,14 +8,12 @@ import { getFish } from '../../redux/Fish/Fish';
 
 const Homepage = () => {
   const navigate = useNavigate();
-  const fishArray = useSelector((state) => state.fishArray);
+  const fishArray = useSelector((state) => state.fish.fishArray);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (!fishArray.fishArray.length) dispatch(getFish());
+    if (!fishArray.length) dispatch(getFish());
   }, []);
-
-  console.log(fishArray);
 
   return (
     <>
