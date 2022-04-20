@@ -1,15 +1,8 @@
-const baseUrl = 'https://zoo-animal-api.herokuapp.com/animals/rand/10';
-
-export default async function FetchFishData() {
+export default async function fetchFishData() {
+  const baseUrl = 'https://zoo-animal-api.herokuapp.com/animals/rand/10';
   const response = await fetch(baseUrl);
-  if (response.status !== 200) {
-    throw new Error(
-      'wrong endpoint, check endpoint and try again',
-    );
-  } try {
-    const res = await response.json();
-    console.log(res);
-  } catch (error) {
-    throw new Error(error.message);
+  if (response.status === 200) {
+    return response.json();
   }
+  return null;
 }
