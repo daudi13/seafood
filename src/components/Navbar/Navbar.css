@@ -16,9 +16,23 @@
 }
 
 .nav-search > * + * {
-  margin-left: 15px;
+  margin-left: 10px;
+}
+
+.mic {
+  margin-left: 50px;
 }
 
 .nav-title {
   transform: translateX(30%);
+}
+
+.nav-title {
+  overflow: hidden;
+  justify-self: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  width: 150px;
+  text-align: center;
 }
