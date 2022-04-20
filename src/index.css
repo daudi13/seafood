@@ -38,3 +38,17 @@ li {
   justify-content: space-between;
 }
 
+small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+  color: antiquewhite;
+}
+
+.location, .diet {
+  font-size: 12px;
+}
+
+.factName {
+  margin-right: 30px;
+}

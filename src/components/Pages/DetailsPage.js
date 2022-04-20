@@ -52,8 +52,8 @@ const DetailsPage = () => {
                   <span className="factProp">{`${fish.maxWeight}kgs`}</span>
                 </li>
                 <li>
-                  <span className="factName">Geo Location</span>
-                  <span className="factProp">{fish.geo}</span>
+                  <span className="factName">Minimum weight</span>
+                  <span className="factProp">{`${fish.minWeight}kgs`}</span>
                 </li>
               </ul>
             </Accordion.Body>
@@ -68,15 +68,15 @@ const DetailsPage = () => {
                 </li>
                 <li>
                   <span className="factName">Diet</span>
-                  <small className="factProp">{fish.diet}</small>
+                  <small className="factProp diet" title={fish.diet}>{fish.diet}</small>
                 </li>
                 <li>
                   <span className="factName">lifespan</span>
                   <small className="factProp">{`${fish.lifespan} years`}</small>
                 </li>
                 <li>
-                  <span className="factName">Minimum weight</span>
-                  <span className="factProp">{`${fish.minWeight}kgs`}</span>
+                  <span className="factName">Location</span>
+                  <small className="factProp location">{fish.geo}</small>
                 </li>
               </ul>
             </Accordion.Body>
