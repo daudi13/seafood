@@ -10,50 +10,75 @@ const DetailsPage = () => {
   return (
     <>
       <header>
-        <NavBar title={fish.name} back={1} />
+        <NavBar title={fish.name} back />
         <img className="header-img" src={fish.img} alt={fish.name} />
       </header>
       <h4>Fact box</h4>
       <main>
         <Accordion defaultActiveKey="0" flush>
           <Accordion.Item eventKey="0">
-            <Accordion.Header className="accordion-eader" style={{ backgroundColor: 'pink' }}>Accordion Item #1</Accordion.Header>
+            <Accordion.Header className="accordion-eader" style={{ backgroundColor: 'pink' }}>Biological facts</Accordion.Header>
             <Accordion.Body className="accordion">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
-              </p>
+              <ul>
+                <li>
+                  <span className="factName">Latin name</span>
+                  <small className="factProp">{fish.sciName}</small>
+                </li>
+                <li>
+                  <span className="factName">animal class</span>
+                  <small className="factProp">{fish.animGroup}</small>
+                </li>
+                <li>
+                  <span className="factName">Active time</span>
+                  <small className="factProp">{fish.active}</small>
+                </li>
+              </ul>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
-            <Accordion.Header>Accordion Item #2</Accordion.Header>
+            <Accordion.Header>Physical Dimensions & weight</Accordion.Header>
             <Accordion.Body className="accordion">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-              est laborum.
+              <ul>
+                <li>
+                  <span className="factName">Maximum length</span>
+                  <span className="factProp">{`${fish.maxLength}m`}</span>
+                </li>
+                <li>
+                  <span className="factName">Min length</span>
+                  <span className="factProp">{`${fish.minLength}m`}</span>
+                </li>
+                <li>
+                  <span className="factName">Maximum weight</span>
+                  <span className="factProp">{`${fish.maxWeight}kgs`}</span>
+                </li>
+                <li>
+                  <span className="factName">Geo Location</span>
+                  <span className="factProp">{fish.geo}</span>
+                </li>
+              </ul>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="0">
-            <Accordion.Header className="accordion-eader" style={{ backgroundColor: 'pink' }}>Accordion Item #1</Accordion.Header>
+            <Accordion.Header className="accordion-eader" style={{ backgroundColor: 'pink' }}>Habitat & life facts</Accordion.Header>
             <Accordion.Body className="accordion">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
-              </p>
+              <ul>
+                <li>
+                  <span className="factName">Habitat</span>
+                  <small className="factProp">{fish.habitat}</small>
+                </li>
+                <li>
+                  <span className="factName">Diet</span>
+                  <small className="factProp">{fish.diet}</small>
+                </li>
+                <li>
+                  <span className="factName">lifespan</span>
+                  <small className="factProp">{`${fish.lifespan} years`}</small>
+                </li>
+                <li>
+                  <span className="factName">Minimum weight</span>
+                  <span className="factProp">{`${fish.minWeight}kgs`}</span>
+                </li>
+              </ul>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
