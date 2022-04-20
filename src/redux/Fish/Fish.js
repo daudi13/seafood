@@ -33,6 +33,8 @@ function getFish() {
           id: dat.id,
           name: dat.name,
           sciName: dat.latin_name,
+          animGroup: dat.animal_type,
+          active: dat.active_time,
           maxLength: dat.length_max,
           minLength: dat.length_min,
           minWeight: dat.weight_min,
@@ -40,6 +42,7 @@ function getFish() {
           lifespan: dat.lifespan,
           habitat: dat.habitat,
           diet: dat.diet,
+          geo: dat.geo_range,
           img: dat.image_link,
         }));
         dispatch(getFishSuccess(fishJSON));
