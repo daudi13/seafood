@@ -5,6 +5,6 @@ describe('fetch animal items', () => {
   it('should return a response 200', async () => {
     const res = await fetchFishData();
 
-    expect(res.status).toEqual(200);
+    await expect(res.status).toEqual(200);
   });
 });
