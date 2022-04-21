@@ -18,11 +18,11 @@ const Homepage = () => {
   return (
     <>
       <header>
-        <NavBar title="seafood" />
+        <NavBar title="SaveEarth" />
         <img className="header-img" src="https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="fishing boat" />
         <div className="image-cover" />
       </header>
-      <h4>All fish species</h4>
+      <h4>Animal species</h4>
       <main className="main">
         {fishArray.map((fish) => (
           <FishCard
