@@ -21,6 +21,10 @@ const DetailsPage = () => {
             <Accordion.Body className="accordion">
               <ul>
                 <li>
+                  <span className="factName">English name</span>
+                  <small className="factProp">{fish.name}</small>
+                </li>
+                <li>
                   <span className="factName">Latin name</span>
                   <small className="factProp">{fish.sciName}</small>
                 </li>
