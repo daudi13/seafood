@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = ({ title, back }) => (
   <nav className="nav">
-    {back ? (<NavLink to="/"><ArrowBackIosNewRoundedIcon /></NavLink>) : <img className="nav-icons" src="./images/fish.png" alt="fish" />}
+    {back ? (<NavLink to="/"><ArrowBackIosNewRoundedIcon /></NavLink>) : <img className="nav-icons" src="./images/polar-bear.png" alt="fish" />}
     <h2 className="nav-title">{title}</h2>
     <div className="nav-search">
       <img className="nav-icons mic" src="./images/mic.png" alt="mic" />
