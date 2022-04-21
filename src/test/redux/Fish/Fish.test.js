@@ -1,4 +1,7 @@
 /* eslint linebreak-style: ["error", "windows"] */
+import { cleanup } from '@testing-library/react';
+import { applyMiddleware, createStore } from 'redux';
+import thunk from 'redux-thunk';
 import FishReducer from '../../../redux/Fish/Fish';
 
 const initialState = {
@@ -7,12 +10,17 @@ const initialState = {
   error: '',
 };
 
-describe('Testing fish type reducer', () => {
-  test('should return initial state', () => {
-    expect(FishReducer(undefined, {})).toStrictEqual(initialState);
-  });
+describe('FishReducer', () => {
+  describe('getFish actions', () => {
+    afterEach(cleanup);
 
-  test('should return items passed in action', () => {
-    expect()
-  })
+    it('should return the exact initial state', () => {
+      const store = createStore(
+        FishReducer,
+        applyMiddleware(thunk),
+      );
+
+      expect(store.getState()).toEqual(initialState);
+    });
+  });
 });
