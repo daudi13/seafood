@@ -2,7 +2,7 @@
 import { cleanup } from '@testing-library/react';
 import { applyMiddleware, createStore } from 'redux';
 import thunk from 'redux-thunk';
-import FishReducer, { getFishRequest } from '../../../redux/Fish/Fish';
+import FishReducer, { getFishFail, getFishRequest } from '../../../redux/Fish/Fish';
 
 const initialState = {
   loading: false,
@@ -26,6 +26,12 @@ describe('FishReducer', () => {
     it('should return loading key in the intial state to be true', () => {
       store.dispatch(getFishRequest());
       expect(store.getState().loading).toBeTruthy();
+    });
+
+    it('should return an error', () => {
+      const newError = 'Check Endpoint then try again';
+      store.dispatch(getFishFail(newError));
+      expect(store.getState().error).toEqual(newError);
     });
   });
 });
