@@ -14,8 +14,8 @@ const FishCard = ({
     onClick={onClick}
   >
     <ArrowCircleRightOutlined className="pointer" />
-    <div>
-      <h3 className="fishname">{name}</h3>
+    <div className="fishname">
+      <h3>{name}</h3>
       <small>{`${weight}kgs`}</small>
     </div>
     <div className="overlay" />
