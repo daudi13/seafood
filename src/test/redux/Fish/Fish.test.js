@@ -1,5 +1,4 @@
 /* eslint linebreak-style: ["error", "windows"] */
-import { cleanup } from '@testing-library/react';
 import { applyMiddleware, createStore } from 'redux';
 import thunk from 'redux-thunk';
 import FishReducer, { getFishFail, getFishRequest, getFishSuccess } from '../../../redux/Fish/Fish';
@@ -17,8 +16,6 @@ const store = createStore(
 
 describe('FishReducer', () => {
   describe('getFish actions', () => {
-    afterEach(cleanup);
-
     it('should return the exact initial state', () => {
       expect(store.getState()).toEqual(initialState);
     });
