@@ -1,7 +1,7 @@
 /* eslint linebreak-style: ["error", "windows"] */
 import { render, screen } from '@testing-library/react';
 import FishCard from '../../components/Fishcard/Fishcard';
-import 'intersection-observer';
+import 'react-intersection-observer';
 
 describe('test Fishcard component', () => {
   test('check whether the component renders correctly', () => {
