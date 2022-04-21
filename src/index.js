@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
+/* eslint linebreak-style: ["error", "windows"] */
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

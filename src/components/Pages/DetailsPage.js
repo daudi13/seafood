@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "windows"] */
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';

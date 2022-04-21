@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "windows"] */
 import fetchFishData from '../../database/fishAPI';
 
 const GET_FISH_REQUEST = 'seafood/Fish/FETCH/GET_REQUEST';
