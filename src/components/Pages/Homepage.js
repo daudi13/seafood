@@ -22,7 +22,10 @@ const Homepage = () => {
         <img className="home-img" src="./images/kindpng_7177875.png" alt="im" />
         <div className="image-cover" />
       </header>
-      <h6>Animal species</h6>
+      <div className="search-sec">
+        <h6>Animal species</h6>
+        <input type="text" placeholer="search animal..." />
+      </div>
       <main className="main">
         {fishArray.map((fish) => (
           <FishCard
