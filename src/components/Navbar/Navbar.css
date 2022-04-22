@@ -25,11 +25,8 @@
 }
 
 .nav-title {
-  transform: translateX(30%);
-}
-
-.nav-title {
   overflow: hidden;
+  transform: translateX(30%);
   justify-self: center;
   white-space: nowrap;
   text-overflow: ellipsis;

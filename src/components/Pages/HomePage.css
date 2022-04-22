@@ -1,5 +1,5 @@
 .header {
-  height:220px;
+  height: 220px;
   width: 100%;
   padding: 55px 5px;
   background-color: rgb(9, 177, 243);
@@ -10,11 +10,10 @@
   flex-wrap: wrap;
 }
 
-
 @media screen and (min-width: 768px) {
   .header {
     height: 550px;
-    padding: 77px 14px 0 ; 
+    padding: 77px 14px 0;
   }
 }
 
