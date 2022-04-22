@@ -1,9 +1,9 @@
 
-# Seafood
+# PerspectiveWild
 
-> This is a react project that showcase the different types of fish used as sea food. The project aims to shade light on the nutriotional bennefits of fish and other metrics for specific fish species. checkout the demo site [here]()
+> This is a react project that showcase the different types of animals both wild and domesticated. The project aims to shade light on the need to preserved the different species of animals and at the same time share facts curated for specific animals species. checkout the demo site [here]()
 
-
+![](./mobile.png)![](./mobile%20(1).png)
 ## Build with
 
 - [x] React
