@@ -17,3 +17,9 @@
     padding: 77px 14px 0 ; 
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .header {
+    height: 800px;
+  }
+}

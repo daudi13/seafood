@@ -6,9 +6,10 @@
   background-color: rgb(0, 140, 255);
   color: aliceblue;
   position: fixed;
-  top: 0;
+  top: -1px;
   right: 0;
   left: 0;
+  z-index: 1000000;
 }
 
 .nav-icons {
