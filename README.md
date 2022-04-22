@@ -1,7 +1,7 @@
 
 # PerspectiveWild
 
-> This is a react project that showcase the different types of animals both wild and domesticated. The project aims to shade light on the need to preserved the different species of animals and at the same time share facts curated for specific animals species. checkout the demo site [here]()
+> This is a react project that showcase the different types of animals both wild and domesticated. The project aims to shade light on the need to preserved the different species of animals and at the same time share facts curated for specific animals species. checkout the demo site [here](https://6262b89a578849338355be2c--benevolent-peony-90404f.netlify.app/detailsPage)
 
 ![](./mobile.png)![](./mobile%20(1).png)
 ## Build with
