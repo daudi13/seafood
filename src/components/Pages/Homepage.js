@@ -22,7 +22,7 @@ const Homepage = () => {
         <img className="home-img" src="./images/kindpng_7177875.png" alt="im" />
         <div className="image-cover" />
       </header>
-      <h4>Animal species</h4>
+      <h6>Animal species</h6>
       <main className="main">
         {fishArray.map((fish) => (
           <FishCard

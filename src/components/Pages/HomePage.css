@@ -1,11 +1,19 @@
 .header {
-  height:150px;
+  height:220px;
   width: 100%;
-  margin-top: 55px;
-  padding: 5px;
+  padding: 55px 5px;
+  background-color: rgb(137, 220, 253);
 }
 
 .main {
   display: flex;
   flex-wrap: wrap;
+}
+
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 550px;
+    padding: 77px 14px 0 ; 
+  }
 }
