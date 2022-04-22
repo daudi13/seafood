@@ -1,4 +1,3 @@
-/* eslint linebreak-style: ["error", "windows"] */
 import { applyMiddleware, combineReducers, createStore } from 'redux';
 import thunk from 'redux-thunk';
 import FishReducer from './Fish/Fish';

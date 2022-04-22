@@ -1,4 +1,3 @@
-/* eslint linebreak-style: ["error", "windows"] */
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import DetailsPage from './components/Pages/DetailsPage';

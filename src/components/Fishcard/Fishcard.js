@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint linebreak-style: ["error", "windows"] */
 import React from 'react-dom';
 import { ArrowCircleRightOutlined } from '@mui/icons-material';
 import PropTypes from 'prop-types';
@@ -8,11 +6,12 @@ import './Fishcard.css';
 const FishCard = ({
   name, img, onClick, weight,
 }) => (
-  // eslint-disable-next-line jsx-a11y/click-events-have-key-events
   <div
     className="fishcard"
     style={{ backgroundImage: `url(${img})` }}
     onClick={onClick}
+    onKeyDown={onClick}
+    aria-hidden="true"
   >
     <ArrowCircleRightOutlined className="pointer" />
     <div className="fishname">
