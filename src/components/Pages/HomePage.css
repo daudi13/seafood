@@ -10,6 +10,33 @@
   flex-wrap: wrap;
 }
 
+.search-sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 3px 6px;
+}
+
+.input {
+  width: 120px;
+  background-color: inherit;
+  border: 1px solid rgb(10, 223, 223);
+  padding: 0 5px;
+  font-size: 11px;
+  border-radius: 5px;
+  border-top: none;
+}
+
+.input:focus {
+  outline: rgb(0, 255, 255);
+  background-color: azure;
+}
+
+.input::placeholder {
+  color: rgb(185, 223, 248);
+}
+
 @media screen and (min-width: 768px) {
   .header {
     height: 550px;

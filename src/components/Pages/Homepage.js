@@ -24,7 +24,7 @@ const Homepage = () => {
       </header>
       <div className="search-sec">
         <h6>Animal species</h6>
-        <input type="text" placeholer="search animal..." />
+        <input className="input" type="text" placeholder="search animal..." />
       </div>
       <main className="main">
         {fishArray.map((fish) => (
