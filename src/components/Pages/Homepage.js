@@ -30,6 +30,7 @@ const Homepage = () => {
             name={fish.name}
             img={fish.img}
             weight={fish.maxWeight}
+            pos={fish.pos}
             onClick={() => { navigate('/detailsPage', { state: { fish } }); }}
           />
         ))}

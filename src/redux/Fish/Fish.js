@@ -29,7 +29,7 @@ function getFish() {
     dispatch(getFishRequest());
     fetchFishData()
       .then((data) => {
-        const fishJSON = data.map((dat) => ({
+        const fishJSON = data.map((dat, i) => ({
           id: dat.id,
           name: dat.name,
           sciName: dat.latin_name,
@@ -44,6 +44,7 @@ function getFish() {
           diet: dat.diet,
           geo: dat.geo_range,
           img: dat.image_link,
+          pos: i,
         }));
         dispatch(getFishSuccess(fishJSON));
       })
