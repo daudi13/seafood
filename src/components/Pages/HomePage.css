@@ -14,23 +14,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   padding: 3px 6px;
 }
 
 .input {
-  width: 120px;
+  width: 150px;
   background-color: inherit;
   border: 1px solid rgb(10, 223, 223);
-  padding: 0 5px;
+  padding: 3px 5px;
   font-size: 11px;
   border-radius: 5px;
   border-top: none;
 }
 
 .input:focus {
-  outline: rgb(0, 255, 255);
-  background-color: azure;
+  outline: rgb(217, 255, 0);
+  background-color: rgb(1, 255, 255);
 }
 
 .input::placeholder {
@@ -47,5 +47,9 @@
 @media screen and (min-width: 1440px) {
   .header {
     height: 800px;
+  }
+
+  .search-sec {
+    padding: 5px 10px;
   }
 }
