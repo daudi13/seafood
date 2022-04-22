@@ -1,12 +1,11 @@
-.header-img {
-  margin-top: 48px;
+.header {
+  height:150px;
+  width: 100%;
+  margin-top: 55px;
+  padding: 5px;
 }
 
 .main {
   display: flex;
   flex-wrap: wrap;
-}
-
-main:nth-child(2) {
-  background-color: yellow !important;
 }
