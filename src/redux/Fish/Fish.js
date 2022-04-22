@@ -81,7 +81,4 @@ export {
   getFishSuccess,
   getFishFail,
   getFish,
-  GET_FISH_FAIL,
-  GET_FISH_REQUEST,
-  GET_FISH_SUCCESS,
 };
