@@ -40,3 +40,11 @@
 .back {
   color: #fff;
 }
+
+@media screen and (min-width: 768px) {
+  .nav-title {
+    font-size: 20px;
+    text-overflow: clip;
+    width: 300px;
+  }
+}
