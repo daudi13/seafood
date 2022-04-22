@@ -14,7 +14,7 @@ const DetailsPage = () => {
       </header>
       <h4>Fact box</h4>
       <main>
-        <ul>
+        <ul className="facts">
           <li>
             <span className="factName">English name</span>
             <small className="factProp">{fish.name}</small>

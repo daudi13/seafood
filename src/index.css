@@ -65,3 +65,11 @@ small {
 .factName {
   margin-right: 30px;
 }
+
+.facts > li {
+  padding: 15px 0;
+}
+
+.facts > li:nth-child(odd){
+  background-color: rgba(0, 63, 99, 0.6);
+}
