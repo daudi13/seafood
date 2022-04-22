@@ -12,7 +12,7 @@ const DetailsPage = () => {
         <NavBar title={fish.name} back />
         <img className="header-img" src={fish.img} alt={fish.name} />
       </header>
-      <h4>Fact box</h4>
+      <h6>Fact box</h6>
       <main>
         <ul className="facts">
           <li>
